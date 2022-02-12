@@ -1,17 +1,20 @@
-FROM python:3.4
+FROM python:3.11.0a5-alpine3.15
 MAINTAINER Yasine L <lyasine@gmail.com>
+
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /usr/src/app
-COPY requirements.txt ./
-RUN pip install -r requirements.txt
-COPY . .
+pip3 install Django==4.0.2
 
-VOLUME ["/usr/src/app"]
+WORKDIR /var/www/html
+
+VOLUME ["/var/www/html"]
+
+ENV DJANGO_VERSION 4.0.2
+
 
 EXPOSE 8000
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
