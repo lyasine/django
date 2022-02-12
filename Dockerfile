@@ -8,6 +8,10 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install Django==4.0.2
+RUN pip3 install djangorestframework
+RUN pip3 install markdown
+RUN pip3 install django-filter
+RUN pip3 install django-cors-headers
 
 WORKDIR /var/www/html
 
