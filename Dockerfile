@@ -7,7 +7,7 @@ RUN apt-get update \
         postgresql-client \
     && rm -rf /var/lib/apt/lists/*
 
-pip3 install Django==4.0.2
+RUN pip3 install Django==4.0.2
 
 WORKDIR /var/www/html
 
