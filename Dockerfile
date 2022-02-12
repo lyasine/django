@@ -1,4 +1,4 @@
-FROM python:3.11
+FROM python:latest
 MAINTAINER Yasine L <lyasine@gmail.com>
 
 
