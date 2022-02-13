@@ -14,6 +14,7 @@ RUN pip3 install markdown
 RUN pip3 install django-filter
 RUN pip3 install django-cors-headers
 RUN pip3 install psycopg2
+RUN pip3 install Pillow
 
 WORKDIR /var/www/html
 
