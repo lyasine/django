@@ -12,6 +12,7 @@ RUN pip3 install djangorestframework
 RUN pip3 install markdown
 RUN pip3 install django-filter
 RUN pip3 install django-cors-headers
+RUN pip3 install psycopg2
 
 WORKDIR /var/www/html
 
