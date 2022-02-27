@@ -18,7 +18,8 @@ RUN pip3 install Pillow
 RUN pip3 install django-cassandra-engine
 RUN pip3 install cassandra-driver
 RUN pip3 install django-crispy-forms
-
+RUN pip3 install uuid
+RUN pip3 install datetime
 WORKDIR /var/www/html
 
 VOLUME ["/var/www/html"]
