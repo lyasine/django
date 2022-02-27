@@ -15,6 +15,9 @@ RUN pip3 install django-filter
 RUN pip3 install django-cors-headers
 RUN pip3 install psycopg2
 RUN pip3 install Pillow
+RUN pip3 install django-cassandra-engine
+RUN pip3 install cassandra-driver
+RUN pip3 install django-crispy-forms
 
 WORKDIR /var/www/html
 
