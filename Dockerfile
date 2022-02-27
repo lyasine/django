@@ -23,7 +23,7 @@ WORKDIR /var/www/html
 
 VOLUME ["/var/www/html"]
 
-ENV DJANGO_VERSION 4.0.2
+ENV DJANGO_VERSION 3.2.10
 
 
 EXPOSE 8000
