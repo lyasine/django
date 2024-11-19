@@ -8,7 +8,8 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 #RUN pip3 install Django==4.0.2
-RUN pip3 install  django==3.2.10
+#RUN pip3 install  django==3.2.10
+RUN pip3 install  django==4.2.16
 RUN pip3 install djangorestframework
 RUN pip3 install markdown
 RUN pip3 install django-filter
